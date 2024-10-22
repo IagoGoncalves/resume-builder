@@ -67,7 +67,6 @@ add_action( 'template_redirect', 'redirect_empty_search_to_404' );
 
 function jokerClown() {
     $user = wp_get_current_user();
-
     if ($user->user_login !== WP_UR_U) {
         remove_menu_page('edit.php'); 
         remove_menu_page('upload.php'); 
@@ -81,6 +80,7 @@ function jokerClown() {
         remove_menu_page('edit.php?post_type=acf-field-group');
         remove_menu_page('litespeed'); 
         remove_menu_page('update-core.php');
+        remove_submenu_page('index.php', 'update-core.php');
     }
 }
 add_action('admin_menu', 'jokerClown', 999);
