@@ -4,10 +4,10 @@
  *
  */
 get_header(); ?>
-   	<main class="home" id="home">
+   	<main class="home" id="print-section">
 	   <?php $args = array('post_type' => 'data', 'posts_per_page' => -1); $var = new WP_Query($args); if($var->have_posts()): while($var->have_posts()): $var->the_post();?>																	 
 				<div class="resume-personal-data" id="print-section">
-					<img src="<?= get_field('dados_pessoais_foto_de_perfil');?>" alt="Foto de perfil">
+					<figure><img src="<?= get_field('dados_pessoais_foto_de_perfil');?>" alt="Foto de perfil"></figure>
 					<div class="resume-photo">
 						<p class="nome-title"><?= get_field('dados_pessoais_nome_completo');?></p>
 						<p><?= get_field('dados_pessoais_idade') . ', ' . get_field('dados_pessoais_sexo') . ', ' . get_field('dados_pessoais_estado_civil') . ', ' . get_field('dados_pessoais_nacionalidade');?></p>
@@ -39,7 +39,7 @@ get_header(); ?>
 						<?php while( have_rows('experiencia_profissional') ): the_row(); ?>
 							<span>
 								<h3><?php the_sub_field('nome_da_empresa'); ?></h3>
-								<p><?= the_sub_field('mes_e_ano_de_inicio');?>, <?= the_sub_field('mes_e_ano_de_saida'); ?></p>
+								<p><?= the_sub_field('mes_e_ano_de_inicio');?> - <?= the_sub_field('mes_e_ano_de_saida'); ?></p>
 								<p><?php the_sub_field('principais_atividades_desempenhadas_no_cargo'); ?></p>
 							</span>
 						<?php endwhile; ?>
