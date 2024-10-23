@@ -84,3 +84,14 @@ function jokerClown() {
     }
 }
 add_action('admin_menu', 'jokerClown', 999);
+
+function limitar_acoes_autor_a_post_proprio( $query ) {
+    if( current_user_can( 'author' ) && is_admin() && $query->is_main_query() ) {
+        global $pagenow;
+        
+        if( 'edit.php' === $pagenow ) {
+            $query->set( 'author', get_current_user_id() );
+        }
+    }
+}
+add_action( 'pre_get_posts', 'limitar_acoes_autor_a_post_proprio' );

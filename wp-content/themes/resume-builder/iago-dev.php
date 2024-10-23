@@ -8,6 +8,8 @@
         'labels'            => $data,
         'description'       => 'Custom Post for data',
         'public' => true,
+        'show_ui'           => true, 
+        'show_in_menu'      => true,
         'has_archive' => true,
         'show_in_nav_menus' => true,
         'supports' => array('title'),
