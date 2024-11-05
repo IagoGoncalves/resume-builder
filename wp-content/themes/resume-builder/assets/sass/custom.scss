@@ -1,8 +1,26 @@
 :root {
+  --black: #0e0e0e;
+  --black2: #1e1e1e;
+  --white: #fff;
+  --grey: #636165;
+  --grey2: #6d6d6d;
+  --grey3: #eee;
+  --purple: #ae19d9;
+  --blue: #00a5ff;
+  --red: #f32963;
+  --green: #1ace57;
   --darkgreen: #0d682c;
   --darkgreen2: #073717;
-  --grey3: #eee;
+  --orange: #fa8b24;
+
+  --weight800: 800;
   --weight700: 700;
   --weight600: 600;
-  --weight400: 400;
+  --weight500: 500;
+  --weight500: 400;
+  --weight500: 300;
+
+  --radius: 10px;
+  --transition: all 0.1s;
+  --border-top: 1px solid var(--grey3);
 }
