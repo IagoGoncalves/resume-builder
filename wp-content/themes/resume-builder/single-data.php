@@ -57,6 +57,7 @@ get_header();
             <?php endwhile; ?>
         </div>
     <?php endif; ?>
+    <a href="javascript:void()" class="btn-default" id="noprint">Gerar currículo</a>
 </main>
 <?php
 get_footer();

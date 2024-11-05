@@ -1,0 +1,18 @@
+.btn-default {
+  color: #fff;
+  border-radius: var(--radius);
+  background-color: var(--red);
+  padding: 10px 30px;
+  font-size: 2rem;
+  font-weight: 600;
+  display: block;
+  width: fit-content;
+  transition: var(--transition);
+  &:hover {
+    background-color: var(--purple);
+  }
+  @media only screen and (max-width: 600px) {
+    font-size: 1.4rem;
+    padding: 12px 30px;
+  }
+}
