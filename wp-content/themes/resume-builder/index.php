@@ -6,7 +6,7 @@
 get_header(); ?>
    	<main class="home" id="print-section">
 	   <script>
-			window.location.href = 'https://projeto.ideapublicidade.com.br';
+			window.location.href = 'https://extremadeaaz.com';
 		</script>
    	</main>
 <?php get_footer(); ?>
