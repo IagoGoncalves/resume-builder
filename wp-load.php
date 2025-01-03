@@ -16,7 +16,7 @@
  * @package WordPress
  */
 
-/** Define ABSPATH as this file's directory */
+/** Define ABSPATH as this file's directory */ 
 if ( ! defined( 'ABSPATH' ) ) {
 	define( 'ABSPATH', __DIR__ . '/' );
 }
