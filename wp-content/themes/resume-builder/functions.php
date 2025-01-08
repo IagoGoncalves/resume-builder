@@ -95,3 +95,4 @@ function limitar_acoes_autor_a_post_proprio( $query ) {
     }
 }
 add_action( 'pre_get_posts', 'limitar_acoes_autor_a_post_proprio' );
+
